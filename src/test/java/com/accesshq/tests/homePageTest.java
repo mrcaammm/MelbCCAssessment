@@ -13,7 +13,6 @@ public class homePageTest {
 
     WebDriver driver;
 
-
     public void setup() {
         driver = new ChromeDriver();
         driver.get("https://d3udduv23dv8b4.cloudfront.net/");
@@ -21,19 +20,21 @@ public class homePageTest {
 
     public void clean() {driver.quit();}
 
-
-
     @Test
-    public void firstTest() {
+    public void clickEmptyLoginTest() {
         //Setup
         setup();
         HomePage homePage = new HomePage(driver);
 
         //Act
-        var button = homePage.getButton();
+        homePage.getLoginButton().click();
+        homePage.getNotAMember().click();
+        homePage.getSignup().click();
 
         //Assert
-        Assertions.assertEquals("Submit",button.getText());
+        Assertions.assertEquals("Username is required",homePage.getUsernameError().getText());
+        Assertions.assertEquals("Password is required",homePage.getPasswordError().getText());
+        Assertions.assertEquals("Please confirm your password",homePage.getConfirmError().getText());
 
         //Clean
         clean();
