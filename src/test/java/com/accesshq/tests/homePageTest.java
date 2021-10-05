@@ -44,6 +44,9 @@ public class homePageTest {
         clean();
     }
 
+    /**I think the sendkeys issue has something to do with the username text moving
+     * when it is clicked so the textbox isn't interactable.
+     */
     @Test
     public void invalidSignupTest() {
         //Setup
@@ -54,6 +57,7 @@ public class homePageTest {
         homePage.getLoginButton().click();
         homePage.getNotAMemberButton().click();
         //new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getUsernameTextbox()));
+        //homePage.getUsernameTextbox().click();
         //homePage.getUsernameTextbox().sendKeys("abc");
         //homePage.getPasswordTextbox().sendKeys("abc");
         //homePage.getConfirmTextbox().sendKeys("def");

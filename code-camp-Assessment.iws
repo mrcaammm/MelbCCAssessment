@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7f0b033-f8a5-4310-b80d-73e2dbb4636c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/menuTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/MenuPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-camp-Assessment.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp-Assessment.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/homePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/homePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" afterDir="false" />
@@ -261,7 +259,7 @@
       <recent name="com.accesshq.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.menuTests">
+  <component name="RunManager" selected="JUnit.homePageTest.invalidSignupTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -391,11 +389,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.homePageTest.invalidSignupTest" />
         <item itemvalue="JUnit.menuTests" />
         <item itemvalue="JUnit.homePageTest" />
         <item itemvalue="JUnit.homePageTest.clickEmptyLoginTest" />
         <item itemvalue="JUnit.Whole project" />
-        <item itemvalue="JUnit.homePageTest.invalidSignupTest" />
       </list>
     </recent_temporary>
   </component>

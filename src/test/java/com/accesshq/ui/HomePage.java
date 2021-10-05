@@ -32,15 +32,16 @@ public class HomePage {
     }
 
     public WebElement getUsernameTextbox() {
-        return driver.findElement(By.cssSelector("[id='input-108']"));
+        return driver.findElement(By.cssSelector("[id='gen-20211005-username']"));
+        //or "[id='input-108']"
     }
 
     public WebElement getPasswordTextbox() {
-        return driver.findElement(By.cssSelector("[id='input-107']"));
+        return driver.findElement(By.cssSelector("[id='input-111']"));
     }
 
     public WebElement getConfirmTextbox() {
-        return driver.findElement(By.cssSelector("[id='input-110']"));
+        return driver.findElement(By.cssSelector("[id='input-114']"));
     }
 
     public WebElement getUsernameError() {return driver.findElement(By.cssSelector("[id='username-err']"));}
