@@ -33,6 +33,7 @@ public class homePageTest {
         //Act
         homePage.getLoginButton().click();
         homePage.getNotAMemberButton().click();
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getUsernameTextbox()));
         homePage.getSignupButton().click();
 
         //Assert
@@ -44,9 +45,6 @@ public class homePageTest {
         clean();
     }
 
-    /**I think the sendkeys issue has something to do with the username text moving
-     * when it is clicked so the textbox isn't interactable.
-     */
     @Test
     public void invalidSignupTest() {
         //Setup
@@ -56,18 +54,17 @@ public class homePageTest {
         //Act
         homePage.getLoginButton().click();
         homePage.getNotAMemberButton().click();
-        //new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getUsernameTextbox()));
-        //homePage.getUsernameTextbox().click();
-        //homePage.getUsernameTextbox().sendKeys("abc");
-        //homePage.getPasswordTextbox().sendKeys("abc");
-        //homePage.getConfirmTextbox().sendKeys("def");
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getUsernameTextbox()));
+        homePage.getUsernameTextbox().sendKeys("abc");
+        homePage.getPasswordTextbox().sendKeys("abc");
+        homePage.getConfirmTextbox().sendKeys("def");
 
-        //homePage.getSignupButton().click();
+        homePage.getSignupButton().click();
 
         //Assert
-        //Assertions.assertEquals("Username must be minimum of 6 characters",homePage.getUsernameError().getText());
-        //Assertions.assertEquals("Password must be minimum of 8 characters",homePage.getPasswordError().getText());
-        //Assertions.assertEquals("Your passwords do not match",homePage.getConfirmError().getText());
+        Assertions.assertEquals("Username must be minimum of 6 characters",homePage.getUsernameError().getText());
+        Assertions.assertEquals("Password must be minimum of 8 characters",homePage.getPasswordError().getText());
+        Assertions.assertEquals("Your passwords do not match",homePage.getConfirmError().getText());
 
         //Clean
         clean();
@@ -82,12 +79,12 @@ public class homePageTest {
         //Act
         homePage.getLoginButton().click();
         homePage.getNotAMemberButton().click();
-        //homePage.getUsernameTextbox().sendKeys("donaldtrump");
-
-        //homePage.getSignupButton().click();
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getUsernameTextbox()));
+        homePage.getUsernameTextbox().sendKeys("donaldtrump");
+        homePage.getSignupButton().click();
 
         //Assert
-        //Assertions.assertEquals("Username already exists",homePage.getUsernameError().getText());
+        Assertions.assertEquals("Username already exists",homePage.getUsernameError().getText());
 
         //Clean
         clean();
@@ -102,16 +99,17 @@ public class homePageTest {
         //Act
         homePage.getLoginButton().click();
         homePage.getNotAMemberButton().click();
-        //homePage.getUsernameTextbox().sendKeys("robinhood");
-        //homePage.getPasswordTextbox().sendKeys("letmein2019");
-        //homePage.getConfirmTextbox().sendKeys("letmein2019");
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getUsernameTextbox()));
+        homePage.getUsernameTextbox().sendKeys("robinhood");
+        homePage.getPasswordTextbox().sendKeys("letmein2019");
+        homePage.getConfirmTextbox().sendKeys("letmein2019");
 
-        //homePage.getSignupButton().click();
+        homePage.getSignupButton().click();
 
-        //new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getPopup()));
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(homePage.getPopup()));
 
         //Assert
-        //Assertions.assertTrue(homePage.getPopup().isDisplayed());
+        Assertions.assertTrue(homePage.getPopup().isDisplayed());
 
         //Clean
         clean();

@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class menuTests {
     WebDriver driver;
@@ -25,6 +27,7 @@ public class menuTests {
 
         //Act
         menuPage.clickMenu().click();
+        new WebDriverWait(driver,5);
         var pizzas = menuPage.getPizzas();
         var veganPizzas = menuPage.getVegan(pizzas);
         int count = menuPage.checkPizzaPrice(veganPizzas);
