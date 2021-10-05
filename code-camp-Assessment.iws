@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7f0b033-f8a5-4310-b80d-73e2dbb4636c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/menuTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/MenuPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-camp-Assessment.iws" beforeDir="false" afterPath="$PROJECT_DIR$/code-camp-Assessment.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/homePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/tests/homePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/accesshq/ui/HomePage.java" afterDir="false" />
@@ -259,7 +261,7 @@
       <recent name="com.accesshq.tests" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.menuTests">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -272,6 +274,24 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,9 +327,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="homePageTest.clickEmptyLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp-Assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.homePageTest" />
+      <option name="METHOD_NAME" value="clickEmptyLoginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="homePageTest.invalidSignupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp-Assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.homePageTest" />
+      <option name="METHOD_NAME" value="invalidSignupTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="menuTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-camp-Assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.accesshq.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.accesshq.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.accesshq.tests.menuTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.menuTests" />
         <item itemvalue="JUnit.homePageTest" />
+        <item itemvalue="JUnit.homePageTest.clickEmptyLoginTest" />
+        <item itemvalue="JUnit.Whole project" />
+        <item itemvalue="JUnit.homePageTest.invalidSignupTest" />
       </list>
     </recent_temporary>
   </component>

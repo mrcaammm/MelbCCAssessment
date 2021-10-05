@@ -17,7 +17,7 @@ public class HomePage {
         return driver.findElement(By.cssSelector("[aria-label='login or signup']"));
     }
 
-    public WebElement getNotAMember() {
+    public WebElement getNotAMemberButton() {
         var find = driver.findElements(By.tagName("a"));
         for (WebElement button : find) {
             if (button.getText().equals("Sign Up")) {
@@ -27,28 +27,20 @@ public class HomePage {
         throw new NoSuchElementException("Could not find button");
     }
 
-    public WebElement getUsername() {
-        var find = driver.findElements(By.tagName("label"));
-        for (WebElement element : find) {
-            if (element.getText().equals("Username")) {
-                return element;
-            }
-        }
-        throw new NoSuchElementException("Could not find button");
-    }
-
-    public WebElement getPassword() {
-        var find = driver.findElements(By.tagName("label"));
-        for (WebElement element : find) {
-            if (element.getText().equals("Username")) {
-                return element;
-            }
-        }
-        throw new NoSuchElementException("Could not find button");
-    }
-
-    public WebElement getSignup() {
+    public WebElement getSignupButton() {
         return driver.findElement(By.cssSelector("[aria-label='signup']"));
+    }
+
+    public WebElement getUsernameTextbox() {
+        return driver.findElement(By.cssSelector("[id='input-108']"));
+    }
+
+    public WebElement getPasswordTextbox() {
+        return driver.findElement(By.cssSelector("[id='input-107']"));
+    }
+
+    public WebElement getConfirmTextbox() {
+        return driver.findElement(By.cssSelector("[id='input-110']"));
     }
 
     public WebElement getUsernameError() {return driver.findElement(By.cssSelector("[id='username-err']"));}
@@ -56,4 +48,6 @@ public class HomePage {
     public WebElement getPasswordError() {return driver.findElement(By.cssSelector("[id='password-err']"));}
 
     public WebElement getConfirmError() {return driver.findElement(By.cssSelector("[id='confirm-err']"));}
+
+    public WebElement getPopup() {return driver.findElement(By.cssSelector("[aria-live='polite']"));}
 }
